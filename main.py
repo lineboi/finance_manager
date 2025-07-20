@@ -1,9 +1,10 @@
 import sys
+import data_handler
 from datetime import datetime
 
 
 
-transactions = []
+transactions = data_handler.load_transaction()
 balance = 0.0   
 def menu():
     menu=["Add income","Add expense","view summary","View all transactions ", "Exit"]
@@ -51,6 +52,7 @@ def add_income():
         date_input=input("enter the date of income (YYYY-MM-DD): ")
         income['date'] = date_input if date_input else datetime.today().strftime('%Y-%m-%d')
         transactions.append(income)
+        data_handler.save_transaction(transactions)
         print("Income added successfully!")
         print(" do you need to add more income? (yes/no)")
         choice= input("yes/no: ").lower()
@@ -74,6 +76,7 @@ def add_expense():
         date_input=input("enter the date of expense (YYYY-MM-DD): ")
         expense['date'] = date_input if date_input else datetime.today().strftime('%Y-%m-%d')
         transactions.append(expense)
+        data_handler.save_transaction(transactions)
         print("Expense added successfully!")
         print(" do you need to add more expense? (yes/no)")
         choice= input("yes/no: ").lower()
