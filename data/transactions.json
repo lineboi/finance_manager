@@ -1,0 +1,50 @@
+[
+    {
+        "type": "income",
+        "source": "ibirayi",
+        "amount": 2333.0,
+        "date": "2025-07-20"
+    },
+    {
+        "type": "income",
+        "source": "66",
+        "amount": 879.0,
+        "date": "2025-07-20"
+    },
+    {
+        "type": "income",
+        "source": "ibiryo",
+        "amount": 23.0,
+        "date": "2025-07-20"
+    },
+    {
+        "type": "income",
+        "source": "ibirayi",
+        "amount": 1233.0,
+        "date": "2025-07-20"
+    },
+    {
+        "type": "expense",
+        "category": "ibiryo",
+        "amount": 23.0,
+        "date": "2025-07-20"
+    },
+    {
+        "type": "expense",
+        "category": "123",
+        "amount": 32.0,
+        "date": "2025-07-20"
+    },
+    {
+        "type": "income",
+        "source": "ibirayi",
+        "amount": 12000.0,
+        "date": "2025-07-20"
+    },
+    {
+        "type": "expense",
+        "category": "ibiryo",
+        "amount": 234.0,
+        "date": "2025-07-20"
+    }
+]
